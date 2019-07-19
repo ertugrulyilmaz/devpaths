@@ -10,16 +10,19 @@ public class PokerScore implements Score {
     this.scores = new int[playerCount];
   }
 
+  @Override
   public void clear() {
     for (int i = 0; i < playerCount; i++) {
       scores[i] = 0;
     }
   }
 
+  @Override
   public void update(int player, int score) {
     scores[player] += score;
   }
 
+  @Override
   public String getScores() {
     StringBuilder sb = new StringBuilder();
 

@@ -15,4 +15,9 @@ public class FourOfAKind implements HandValue {
   public boolean check(List<Card> cards) {
     return false;
   }
+
+  @Override
+  public int compare(List<Card> cards1, List<Card> cards2) {
+    return 0;
+  }
 }
